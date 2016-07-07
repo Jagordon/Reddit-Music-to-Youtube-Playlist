@@ -44,9 +44,7 @@ function checkIfYoutubeLink(){
 }
 
 function getYoutubeIdLength(index){
-    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
-    var match = x[index].toString().match(regExp);
-    return match&&match[7].length;
+    return getYoutubeId(index).length;
 }
 
 function getYoutubeId(index){
