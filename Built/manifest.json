@@ -1,0 +1,14 @@
+{
+  "name": "Reddit Music To Youtube Playlist",
+  "icons": {"128": "icon128.png" },
+  "version": "1.2",
+  "manifest_version": 2,
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "content_scripts": [{
+      "matches": ["http://www.reddit.com/r/music/*","https://www.reddit.com/r/Music/*","https://www.reddit.com/r/Music/*", "https://www.reddit.com/r/music/*"],
+      "js": ["open-dialog.js"]
+  }]
+}

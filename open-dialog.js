@@ -58,7 +58,7 @@ function appendToLink(id){
 }
 
 function setupElements(){
-    //Holer Div
+    //Holder Div
     var holderDiv = document.createElement("DIV");
     holderDiv.className = "morelink";
     holderDiv.style.marginTop = "1em";
