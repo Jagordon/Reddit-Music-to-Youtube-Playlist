@@ -1,14 +1,31 @@
 {
-  "name": "Reddit Music To Youtube Playlist",
-  "icons": {"128": "icon128.png" },
+  "name": "Reddit Comment Music To Youtube Playlist",
+  "icons": {
+    "128": "icon128.png"
+  },
   "version": "1.2",
   "manifest_version": 2,
   "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   },
-  "content_scripts": [{
-      "matches": ["http://www.reddit.com/r/music/*","https://www.reddit.com/r/Music/*","https://www.reddit.com/r/Music/*", "https://www.reddit.com/r/music/*"],
-      "js": ["open-dialog.js"]
-  }]
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.reddit.com/r/casualUK/*",
+        "https://www.reddit.com/r/CasualUK/*",
+        "https://www.reddit.com/r/CasualUK/*",
+        "https://www.reddit.com/r/CasualUK/*",
+        "http://www.reddit.com/r/casualuk/*",
+        "https://www.reddit.com/r/Casualuk/*",
+        "https://www.reddit.com/r/Casualuk/*",
+        "https://www.reddit.com/r/Casualuk/*"
+      ],
+      "js": [
+        "open-dialog.js"
+      ]
+    }
+  ]
 }
